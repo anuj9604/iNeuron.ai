@@ -1,0 +1,11 @@
+Q-13. Write an SQL query to show only odd rows from a table.
+
+SELECT *
+FROM (SELECT row_number() OVER() AS r, *
+FROM Employee) AS t1
+WHERE r%2 = 1;
+
+Q-14. Write an SQL query to clone a new table from another table.
+
+CREATE TABLE new_table AS 
+TABLE existing_table;
