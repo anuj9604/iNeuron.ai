@@ -61,5 +61,5 @@ for root_folder, sub_folders, files in os.walk('./same-resume-year-wise-master')
             print(file.split('.')[1])
             
 df.insert(1, "git id", git)
-df.insert(1, "linkedIn id", git)
-df.insert(1, "email id", git)
+df.insert(1, "linkedIn id", linkedin)
+df.insert(1, "email id", emails)
